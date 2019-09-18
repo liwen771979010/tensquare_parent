@@ -1,19 +1,16 @@
 package com.tensquare.spit.service;
 
-import com.sun.org.apache.regexp.internal.RE;
 import com.tensquare.spit.dao.SpitDao;
 import com.tensquare.spit.pojo.Spit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestParam;
 import util.IdWorker;
 
 import java.util.Date;
